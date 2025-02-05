@@ -18,7 +18,7 @@ import { HiOutlineClipboardDocument } from "react-icons/hi2";
 import { GrDocumentVerified } from "react-icons/gr";
 import { GrDocumentTime } from "react-icons/gr";
 import MyBarChart from "@/components/BarChart";
-import { ListData } from "@/utils/listData";
+import { ListData } from "@/utils/ListData";
 import { useState } from "react";
 
 const sidebarData = [
