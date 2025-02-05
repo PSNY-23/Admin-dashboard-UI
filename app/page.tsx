@@ -68,21 +68,23 @@ import { LuLogOut } from "react-icons/lu";
 import SmallBarChart from "@/components/SmallBarChart";
 
 const DashboardPage = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false)
+  const [isCollapsed, setIsCollapsed] = useState(false);
   return (
     <div className='h-screen flex w-screen'>
       {/* sidebar */}
 
-      <div className={`fixed top-0 max-w-64 p-6 left-0 h-full overflow-hidden bg-white flex  flex-col justify-between gap-2 transition-all duration-300 ease-in-out ${
-        isCollapsed ? "" : ""}`}>
-        <div className={`flex cursor-pointer ${isCollapsed ? "justify-center": "justify-end"}`}>
+      <div
+        className={`fixed top-0 max-w-64 p-6 left-0 h-full overflow-hidden bg-white flex  flex-col justify-between gap-2 transition-all duration-300 ease-in-out ${
+          isCollapsed ? "" : ""
+        }`}
+      >
+        <div className={`flex cursor-pointer ${isCollapsed ? "justify-center" : "justify-end"}`}>
           <GoSidebarExpand className='text-4xl text-blue' onClick={() => setIsCollapsed(!isCollapsed)} />
-          
         </div>
 
         <div className='flex gap-4'>
           <Image src='/profile.png' alt='' width={64} height={64} className='rounded-full aspect-square p-2' />
-          <div className={`flex flex-col max-sm:hidden justify-center  ${isCollapsed ? "hidden": "block"}`}>
+          <div className={`flex flex-col max-sm:hidden justify-center  ${isCollapsed ? "hidden" : "block"}`}>
             <p className='text-md font-semibold text-gray-800'>Pankaj Kumar</p>
             <p className='text-xs text-gray-600 font-extralight'>Full Stack Developer</p>
           </div>
@@ -96,18 +98,21 @@ const DashboardPage = () => {
               } `}
             >
               <div className={`font-bold text-xl `}>{items.icons}</div>
-              <p className={`text-base ${isCollapsed ? "hidden": "block"}`}>{items.title}</p>
+              <p className={`text-base ${isCollapsed ? "hidden" : "block"}`}>{items.title}</p>
             </div>
           ))}
         </div>
         <div className='flex justify-start items-center gap-2 bg-gray-200 py-2 px-3 rounded-md mr-6'>
           <LuLogOut className='text-gray-600 h-6 w-6' />
-          <p className={`font-semibold text-gray-600 ${isCollapsed ? "hidden": "block"}`}>Log Out</p>
+          <p className={`font-semibold text-gray-600 ${isCollapsed ? "hidden" : "block"}`}>Log Out</p>
         </div>
       </div>
       {/* left: main page */}
-      <div className={`h-full flex-1 flex flex-col gap-2 transition-all duration-200 ease-in-out ${
-        isCollapsed ? "ml-24" : "ml-64" }`}>
+      <div
+        className={`h-full flex-1 flex flex-col gap-2 transition-all duration-200 ease-in-out ${
+          isCollapsed ? "ml-24" : "ml-64"
+        }`}
+      >
         <div className='px-10 pt-6 flex justify-between'>
           <div className='text-gray-800'>
             <p className='font-bold text-2xl'>Dashboard</p>
@@ -238,38 +243,43 @@ const DashboardPage = () => {
           <div className='w-64 flex flex-col gap-4'>
             <div className='bg-white p-4 rounded-lg flex flex-col items-start'>
               <span className='bg-violet-100 text-blue px-4 py-1 rounded-full text-xs'>Team Review</span>
-              <p className="text-xl mt-4 font-thin text-gray-700">Oxish Project Team</p>
-              <p className="text-xs mt-1 text-gray-400">Oxish is built for every user of your project team to plan, manage.</p>
-              <div className="mt-2 flex justify-start items-center gap-2 text-xs text-gray-500 font-semibold">
+              <p className='text-xl mt-4 font-thin text-gray-700'>Oxish Project Team</p>
+              <p className='text-xs mt-1 text-gray-400'>
+                Oxish is built for every user of your project team to plan, manage.
+              </p>
+              <div className='mt-2 flex justify-start items-center gap-2 text-xs text-gray-500 font-semibold'>
                 <p>14.10.2023</p>
-                <p className="bg-gray-100 rounded-md px-2 py-1">15 Members</p>
+                <p className='bg-gray-100 rounded-md px-2 py-1'>15 Members</p>
               </div>
-              <div className="flex justify-center items-center mt-3">
-                <p className="text-base text-gray-500 font-semibold bg-gray-100 rounded-full px-3 py-2">Notion File</p>
-                <p className="">Image logo</p>
+              <div className='flex justify-center items-center mt-3'>
+                <p className='text-base text-gray-500 font-semibold bg-gray-100 rounded-full px-3 py-2'>Notion File</p>
+                <p className=''>Image logo</p>
               </div>
             </div>
             <div className='bg-white p-4 rounded-lg flex flex-col items-start'>
               <span className='bg-violet-100 text-gray-600 px-4 py-1 rounded-full text-xs'>Meeting</span>
-              <p className="text-xl mt-4 font-thin text-gray-700">Upcoming Event Planning Discussion</p>
-              <p className="text-xs mt-1 text-gray-400">Oxish is built for every user of your project team to plan, manage.</p>
-              <div className="mt-2 flex justify-start items-center gap-2 text-xs text-gray-500 font-semibold">
+              <p className='text-xl mt-4 font-thin text-gray-700'>Upcoming Event Planning Discussion</p>
+              <p className='text-xs mt-1 text-gray-400'>
+                Oxish is built for every user of your project team to plan, manage.
+              </p>
+              <div className='mt-2 flex justify-start items-center gap-2 text-xs text-gray-500 font-semibold'>
                 <p>16th Oct</p>
-                <p className="bg-gray-100 rounded-md px-2 py-1">11:00-12:00</p>
+                <p className='bg-gray-100 rounded-md px-2 py-1'>11:00-12:00</p>
               </div>
-              <div className="flex justify-center items-center mt-3 w-full">
-                <p className="w-full text-base text-gray-500 font-semibold bg-gray-100 rounded-full px-3 py-2 text-center">Meeting Zoom Link</p>
-                
+              <div className='flex justify-center items-center mt-3 w-full'>
+                <p className='w-full text-base text-gray-500 font-semibold bg-gray-100 rounded-full px-3 py-2 text-center'>
+                  Meeting Zoom Link
+                </p>
               </div>
             </div>
-            
-            <div className=" overflow-scroll bg-white rounded-lg p-2" >
-              <SmallBarChart/>
+
+            <div className=' overflow-scroll bg-white rounded-lg p-2'>
+              <SmallBarChart />
             </div>
           </div>
         </div>
       </div>
-      <div className="w-2"></div>
+      <div className='w-2'></div>
     </div>
   );
 };
