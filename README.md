@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+The project has been deployed on the vercel.
+
 
 
 First, run the development server:
