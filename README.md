@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-The project has been deployed on the vercel.
+The project has been deployed on the vercel. Made in nextjs using re-chart and tailwindcss.
 
 
 
